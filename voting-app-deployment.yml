@@ -5,7 +5,7 @@ metadata:
   labels:
    app: demo-voting-app
 spec:
-  replicas: 1
+  replicas: 3
   selector:
    matchLabels:
     name: voting-app-pod
@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
         - name: voting-app
-          image: dockersamples/examplevotingapp_vote
+          image: twinkllsisodia/vote
           ports:
           - containerPort: 80
